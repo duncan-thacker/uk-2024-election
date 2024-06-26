@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Cheltenham",
+        "controllingParty": "con",
+        "candidates": {
+            "con": "Alex Chalke",
+            "ldm": "Max Wilkinson"
+        }
+    }
+]

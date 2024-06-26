@@ -1,0 +1,34 @@
+.constituency-card {
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 24px;
+
+    table {
+        border-collapse: collapse;
+    }
+
+    tr[data-winner=true] {
+        background-color: blueviolet;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    tr[data-incumbent=true] {
+        font-style: italic;
+    }
+
+    td {
+        padding: 4px 32px;
+        margin: 0;
+        height: 58px;
+    }
+
+    h1 {
+        font-family: "Josefin Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        letter-spacing: 5px;
+        font-size: 72px;
+    }
+}
