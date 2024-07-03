@@ -1098,7 +1098,8 @@
        "name": "Richard John Holden",
        "party": "Conservative and Unionist Party",
        "constituency": "Basildon and Billericay",
-       "office": "Minister without Portfolio"
+       "office": "Minister without Portfolio",
+       "cabinet": true
     },
     {
        "id": "88301",
@@ -3260,7 +3261,8 @@
        "name": "James Cleverly",
        "party": "Conservative and Unionist Party",
        "constituency": "Braintree",
-       "office": "Home Secretary"
+       "office": "Home Secretary",
+       "cabinet": true
     },
     {
        "id": "78466",
@@ -5099,7 +5101,8 @@
        "name": "Mel Stride",
        "party": "Conservative and Unionist Party",
        "constituency": "Central Devon",
-       "office": "Secretary of State for Work and Pensions"
+       "office": "Secretary of State for Work and Pensions",
+       "cabinet": true
     },
     {
        "id": "27195",
@@ -5388,7 +5391,8 @@
        "name": "Alex Chalk",
        "party": "Conservative and Unionist Party",
        "constituency": "Cheltenham",
-       "office": "Justice Secretary"
+       "office": "Justice Secretary",
+       "cabinet": true
     },
     {
        "id": "67148",
@@ -5587,7 +5591,8 @@
        "name": "Gillian Keegan",
        "party": "Conservative and Unionist Party",
        "constituency": "Chichester",
-       "office": "Secretary of State for Education"
+       "office": "Secretary of State for Education",
+       "cabinet": true
     },
     {
        "id": "116291",
@@ -5726,7 +5731,8 @@
        "id": "595",
        "name": "Lindsay Hoyle",
        "party": "Speaker seeking re-election",
-       "constituency": "Chorley"
+       "constituency": "Chorley",
+       "notes": "By tradition the speaker's re-election is uncontested by the main parties"
     },
     {
        "id": "6504",
@@ -8331,7 +8337,8 @@
        "name": "Claire Coutinho",
        "party": "Conservative and Unionist Party",
        "constituency": "East Surrey",
-       "office": "Secretary of State for Energy Security and Net Zero"
+       "office": "Secretary of State for Energy Security and Net Zero",
+       "cabinet": true
     },
     {
        "id": "1712",
@@ -8926,7 +8933,8 @@
        "name": "Lucy Frazer",
        "party": "Conservative and Unionist Party",
        "constituency": "Ely and East Cambridgeshire",
-       "office": "Secretary of State for Culture, Media and Sport"
+       "office": "Secretary of State for Culture, Media and Sport",
+       "cabinet": true
     },
     {
        "id": "117126",
@@ -9677,7 +9685,8 @@
        "name": "Mark Harper",
        "party": "Conservative and Unionist Party",
        "constituency": "Forest of Dean",
-       "office": "Secretary of State for Transport"
+       "office": "Secretary of State for Transport",
+       "cabinet": true
     },
     {
        "id": "7051",
@@ -10386,7 +10395,8 @@
        "name": "Jeremy Hunt",
        "party": "Conservative and Unionist Party",
        "constituency": "Godalming and Ash",
-       "office": "Chancellor of the Exchequer"
+       "office": "Chancellor of the Exchequer",
+       "cabinet": true
     },
     {
        "id": "117745",
@@ -11882,7 +11892,8 @@
        "name": "Oliver Dowden",
        "party": "Conservative and Unionist Party",
        "constituency": "Hertsmere",
-       "office": "Deputy Prime Minister"
+       "office": "Deputy Prime Minister",
+       "cabinet": true
     },
     {
        "id": "72000",
@@ -14691,7 +14702,8 @@
        "name": "Victoria Atkins",
        "party": "Conservative and Unionist Party",
        "constituency": "Louth and Horncastle",
-       "office": "Secretary of State for Health and Social Care"
+       "office": "Secretary of State for Health and Social Care",
+       "cabinet": true
     },
     {
        "id": "117744",
@@ -15250,7 +15262,8 @@
        "name": "Michelle Donelan",
        "party": "Conservative and Unionist Party",
        "constituency": "Melksham and Devizes",
-       "office": "Secretary of State for Science, Innovation and Technology"
+       "office": "Secretary of State for Science, Innovation and Technology",
+       "cabinet": true
     },
     {
        "id": "1251",
@@ -16068,7 +16081,8 @@
        "name": "David Davies",
        "party": "Conservative and Unionist Party",
        "constituency": "Monmouthshire",
-       "office": "Secretary of State for Wales"
+       "office": "Secretary of State for Wales",
+       "cabinet": true
     },
     {
        "id": "49863",
@@ -17407,7 +17421,8 @@
        "name": "Steve Barclay",
        "party": "Conservative and Unionist Party",
        "constituency": "North East Cambridgeshire",
-       "office": "Secretary of State for Environment, Food and Rural Affairs"
+       "office": "Secretary of State for Environment, Food and Rural Affairs",
+       "cabinet": true
     },
     {
        "id": "26656",
@@ -17890,7 +17905,8 @@
        "name": "Kemi Badenoch",
        "party": "Conservative and Unionist Party",
        "constituency": "North West Essex",
-       "office": "Minister for Women and Equalities"
+       "office": "Minister for Women and Equalities",
+       "cabinet": true
     },
     {
        "id": "116835",
@@ -19290,7 +19306,8 @@
        "name": "Penny Mordaunt",
        "party": "Conservative and Unionist Party",
        "constituency": "Portsmouth North",
-       "office": "Leader of the House of Commons"
+       "office": "Leader of the House of Commons",
+       "cabinet": true
     },
     {
        "id": "38019",
@@ -19874,7 +19891,8 @@
        "name": "Rishi Sunak",
        "party": "Conservative and Unionist Party",
        "constituency": "Richmond and Northallerton",
-       "office": "Prime Minster"
+       "office": "Prime Minster",
+       "cabinet": true
     },
     {
        "id": "115786",
@@ -25583,7 +25601,8 @@
        "name": "Grant Shapps",
        "party": "Conservative and Unionist Party",
        "constituency": "Welwyn Hatfield",
-       "office": "Defence Secretary"
+       "office": "Defence Secretary",
+       "cabinet": true
     },
     {
        "id": "85465",

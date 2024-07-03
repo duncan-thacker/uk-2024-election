@@ -15,6 +15,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -29,11 +33,16 @@ body {
   display: flex;
   min-width: 100vw;
   min-height: 100vh;
+  background-image: url('./background.svg'), url('./background2.svg');
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, top left;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: 'Josefin Slab';
 }
 
 button {

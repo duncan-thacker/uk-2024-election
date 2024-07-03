@@ -3,6 +3,16 @@
     border-radius: 16px;
     padding: 24px;
 
+    .constituency-status {
+        background-color: #ddd;
+        padding: 16px 8px;
+        font-size: 28px;
+
+        button {
+            font-size: 16px;
+        }
+    }
+
     table {
         border-collapse: collapse;
     }
@@ -17,18 +27,82 @@
         font-style: italic;
     }
 
-    td {
+    th, td {
         padding: 4px 32px;
+    }
+
+    td {
         margin: 0;
-        height: 58px;
+        height: 64px;
     }
 
     h1 {
+        color: #203;
+        margin: 0;
         font-family: "Josefin Slab", serif;
         font-optical-sizing: auto;
         font-weight: 800;
         font-style: normal;
         letter-spacing: 5px;
         font-size: 72px;
+        text-shadow: 3px 3px 0 hsl(30, 8%, 76%);
     }
+
+    .constituency-status {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+
+        & > p {
+            margin: 6px;
+        }
+    }
+}
+
+.record-winner-btn {
+    background: white;
+    border: 1px solid #a5b1c2;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #111111;
+    display: inline-block;
+    min-width: 180px;
+    overflow: hidden;
+    padding: 15px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s ease-in-out all;
+}
+
+.record-winner-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.record-winner-btn:before {
+    background: linear-gradient(transparent 0%, rgba(255,255,255,0.6) 50%, transparent 100%);
+    content:'';
+    height: 200%;
+    position: absolute;
+    right: calc(100% + 20px);
+    top: -55%;
+    transform: rotate(-70deg);
+    transition: .6s ease-in-out right;
+    width: 80px;
+    z-index: 0;
+}
+
+.record-winner-btn:hover, record-winner-btn:focus {
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1), inset 0 10px 30px rgba(255,255,255,0.3), inset 0 2px 2px rgba(255,255,255,0.2);
+    color: white;
+}
+
+.button.green:hover, button.green:focus { background: #20bf6b; border-color: #20bf6b; }
+.button.blue:hover, button.blue:focus { background: #0984e3; border-color: #0984e3; }
+.button.orange:hover, button.orange:focus { background: #ff793f; border-color: #ff793f; }
+.record-winner-btn:hover, .record-winner-btn:focus { background: #6c5ce7; border-color: #6c5ce7; }
+
+.record-winner-btn:hover:before {
+    right: -100%;
 }

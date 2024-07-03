@@ -1,15 +1,41 @@
-import { shape, string, bool } from 'prop-types';
-import './ConstituencySummary.css'
-import { Link } from 'react-router-dom';
+import { shape, string, bool } from "prop-types";
+import "./ConstituencySummary.css";
+import { Link } from "react-router-dom";
 
-export default function ConstituencySummary({ value, selected }) {
-  return <Link className='constituency-summary' data-selected={selected} to={`/constituency/${value.code}`}>
-    <div className='special-marker' data-special={value.candidates.some(c => c.office || c.priorOffice)} />
-    <h3>{ value.name }</h3>
-  </Link>
+function getSubtext(constituency, searchTerm) {
+  if (searchTerm.length > 0) {
+    const lower = searchTerm.toLowerCase();
+    const matchesConstituencyName = constituency.name.toLowerCase().includes(lower);
+    if (!matchesConstituencyName) {
+      const matchingCandidate = constituency.candidates.find(c => c.name.toLowerCase().includes(lower));
+      if (matchingCandidate) return matchingCandidate.name;
+    }
+  }
+  return "Some text";
+}
+
+export default function ConstituencySummary({ value, selected, searchTerm }) {
+  const subtext = getSubtext(value, searchTerm);
+  return (
+    <Link
+      className="constituency-summary"
+      data-selected={selected}
+      to={`/constituency/${value.code}`}
+    >
+      <div
+        className="special-marker"
+        data-special={value.candidates.some((c) => c.office || c.priorOffice)}
+      />
+      <div>
+        <h3>{value.name}</h3>
+        <p>{subtext}</p>
+      </div>
+    </Link>
+  );
 }
 
 ConstituencySummary.propTypes = {
   value: shape({ name: string }),
   selected: bool,
-}
+  searchTerm: string,
+};

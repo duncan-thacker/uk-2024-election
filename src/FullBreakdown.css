@@ -1,0 +1,19 @@
+.results-full-breakdown {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 12px;
+    padding: 16px;
+}
+
+.result-bar-fill, .result-bar-empty {
+    padding: 8px 0;
+    font-weight: 400;
+    border-radius: 2px;  
+}
+
+.result-bar-fill {
+    color: #fff;
+    text-align: end;
+}

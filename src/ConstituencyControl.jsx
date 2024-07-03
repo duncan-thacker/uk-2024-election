@@ -5,7 +5,7 @@ export default function ConstituencyControl({ constituency, result }) {
   if (!result)
     return (
       <>
-        Controlled by <strong>{heldBy}</strong>
+        No result recorded. Controlled by <strong>{heldBy}</strong>
       </>
     );
   const winningParty = constituency.candidates.find(
@@ -19,7 +19,7 @@ export default function ConstituencyControl({ constituency, result }) {
     );
   return (
     <>
-      <strong>{heldBy}</strong> lost to <strong>{winningParty}</strong>
+      {winningParty} <strong>GAIN</strong> from {heldBy}
     </>
   );
 }

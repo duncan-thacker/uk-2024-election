@@ -9,7 +9,8 @@ const CONSTITUENCES = Object.entries(TACTICAL_CONSTITUENCIES).map(([key, tactica
     name: tacticalConsituency.constituency,
     heldBy: tacticalConsituency.winner_2019,
     code: key,
-    candidates: getCandidates(tacticalConsituency.constituency)
+    candidates: getCandidates(tacticalConsituency.constituency),
+    notes: tacticalConsituency.notes,
   }))
 
 const withNoCandidates = CONSTITUENCES.filter(c => c.candidates.length === 0);
@@ -22,5 +23,7 @@ const withNoConstituency = CANDIDATES.filter(c => !CONSTITUENCES.find(con => con
 if (withNoConstituency.length > 0) {
     throw new Error('The following candidates do not have a valid constituency: ' + withNoConstituency.map(c => `"${c.name}, ${c.party}"`))
 }
+
+if (CONSTITUENCES.length !== 650) throw new Error('Should be 650 constituencies, but only found ' + CONSTITUENCES.length);
 
 export default CONSTITUENCES;
