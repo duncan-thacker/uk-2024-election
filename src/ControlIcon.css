@@ -1,0 +1,15 @@
+.control-icon {
+    display: flex;
+    column-gap: 4px;
+    .party-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid #888;
+        border-radius: 3px;
+        background-color: #fff;
+        color: #111;
+        width: 25px;
+        padding: 2px;
+    }
+}

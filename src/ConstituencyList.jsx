@@ -49,6 +49,7 @@ export default function ConstituencyList() {
                 value={con}
                 selected={con === selectedConstituency}
                 searchTerm={filters.searchString}
+                result={getResult(con.code)}
               />
             ))}
           </div>

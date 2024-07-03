@@ -1,6 +1,6 @@
 .constituency-summary {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     border-radius: 6px;
     padding: 8px;
@@ -9,10 +9,15 @@
 
     & > .special-marker {
         width: 40px;
-        height: 100%;
+        height: 40px;
+        border-radius: 50%;
+        color: #111;
+        font-size: 28px;
+        text-align: center;
 
         &[data-special=true] {
-            background-color: #ffa;
+            background-color: #f2f2b0;
+            box-shadow: 0px 0px 15px #f2f2b0;
         }
     }
 
