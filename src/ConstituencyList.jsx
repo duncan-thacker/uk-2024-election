@@ -1,4 +1,3 @@
-
 import CONSTITUENCIES from "./constituencyData.js";
 import ConstituencySummary from "./ConstituencySummary.jsx";
 import { useParams } from "react-router-dom";
@@ -7,11 +6,12 @@ import OverallResults from "./OverallResults.jsx";
 import ConstituencyFilters from "./ConstituencyFilters.jsx";
 import useResults from "./useResults.js";
 import NavMenu from "./NavMenu.jsx";
-import useConstituencyFilters, { INITIAL_FILTERS } from "./useConstituencyFilters.js";
+import useConstituencyFilters, {
+  INITIAL_FILTERS,
+} from "./useConstituencyFilters.js";
 import "./ConstituencyList.css";
 
 export default function ConstituencyList() {
-
   const { code } = useParams();
   const selectedConstituency = code
     ? CONSTITUENCIES.find((c) => c.code === code)
@@ -20,7 +20,8 @@ export default function ConstituencyList() {
     throw new Error("Invalid constituency code: " + code);
 
   const { results, getResult, addResult, resetResult } = useResults();
-  const { filteredConstituences, filters, handleChangeFilters } = useConstituencyFilters(selectedConstituency, results);
+  const { filteredConstituences, filters, handleChangeFilters } =
+    useConstituencyFilters(selectedConstituency, results);
 
   return (
     <div className="constituency-list-container">
@@ -29,8 +30,7 @@ export default function ConstituencyList() {
       <div className="constituency-list-grid">
         <div className="constituency-list-with-search">
           <ConstituencyFilters value={filters} onChange={handleChangeFilters} />
-
-          <div className="constituency-list">
+          <div className="constituency-count">
             {filteredConstituences.length === 0 ? (
               <>
                 <em>No constituencies match your filters</em>{" "}
@@ -39,8 +39,10 @@ export default function ConstituencyList() {
                 </button>
               </>
             ) : (
-              <em>Showing {filteredConstituences.length} of 650 seats</em>
+              <em>Showing {filteredConstituences.length} out of 650 seats</em>
             )}
+          </div>
+          <div className="constituency-list">
             {filteredConstituences.map((con) => (
               <ConstituencySummary
                 key={con.name}

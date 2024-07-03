@@ -27,13 +27,4 @@
   max-height: 100vh;
   padding: 8px;
   row-gap: 16px;
-
-  input {
-    border: 1px solid #777;
-    min-width: 600px;
-    font-family: "Josefin Sans", sans-serif;
-    padding: 12px 6px;
-    border-radius: 6px;
-    font-size: 20px;
-  }
 }

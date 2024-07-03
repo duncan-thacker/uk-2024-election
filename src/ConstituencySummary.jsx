@@ -11,7 +11,8 @@ function getSubtext(constituency, searchTerm) {
       if (matchingCandidate) return matchingCandidate.name;
     }
   }
-  return "Some text";
+  const numCandidates = constituency.candidates.length;
+  return numCandidates === 1 ? '1 candidate standing' : `${numCandidates} candidates standing`
 }
 
 export default function ConstituencySummary({ value, selected, searchTerm }) {

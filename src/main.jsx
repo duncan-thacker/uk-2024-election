@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   { path: '/', element: <ConstituencyList />},
   { path: '/constituency/:code', element: <ConstituencyList />},
   { path: '/results', element: <FullBreakdown />},
-  { path: '/settings', element: <AppSettings />}
+  { path: '/settings', element: <AppSettings />},
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

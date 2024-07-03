@@ -4,9 +4,10 @@
     padding: 24px;
 
     .constituency-status {
-        background-color: #ddd;
+        background-color: rgba(150,0,180,0.1);
         padding: 16px 8px;
         font-size: 28px;
+        margin: 12px 0px;
 
         button {
             font-size: 16px;
