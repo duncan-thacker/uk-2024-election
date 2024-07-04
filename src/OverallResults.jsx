@@ -6,9 +6,11 @@ export default function OverallResults({ results }) {
   const partyBreakdown = getPartyBreakdown(results);
 
   return (
-    <div>
+    <div style={{ padding: 12 }}>
       <ul
         style={{
+          padding: 0,
+          margin: "12px 0px",
           display: "flex",
           alignItems: "center",
           listStyleType: "none",
@@ -18,8 +20,11 @@ export default function OverallResults({ results }) {
         {partyBreakdown.map((partyResult) => {
           const diff = partyResult.diff;
           const diffString = diff >= 0 ? `+${diff}` : diff;
+          const style = {
+            padding: '4px 16px', borderLeft: `8px solid ${partyResult.dark}`
+          };
           return (
-            <li key={partyResult.name} style={{ padding: '4px 16px', borderLeft: '1px solid #aaa'}}>
+            <li key={partyResult.name} style={style}>
               {partyResult.abr} &mdash; {partyResult.seatCount} ({diffString})
             </li>
           );
