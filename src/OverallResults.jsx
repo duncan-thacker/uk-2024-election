@@ -6,7 +6,7 @@ export default function OverallResults({ results }) {
   const partyBreakdown = getPartyBreakdown(results);
 
   return (
-    <div style={{ padding: 12 }}>
+    <div style={{ padding: "0px 16px" }}>
       <ul
         style={{
           padding: 0,
@@ -21,7 +21,7 @@ export default function OverallResults({ results }) {
           const diff = partyResult.diff;
           const diffString = diff >= 0 ? `+${diff}` : diff;
           const style = {
-            padding: '4px 16px', borderLeft: `8px solid ${partyResult.dark}`
+            padding: 4, borderLeft: `10px solid ${partyResult.dark}`, width: 175
           };
           return (
             <li key={partyResult.name} style={style}>
@@ -30,7 +30,7 @@ export default function OverallResults({ results }) {
           );
         })}
       </ul>
-      <p>{getControlDescription(partyBreakdown, results.length)}</p>
+      <p style={{ margin: 0, marginTop: 12 }}>{getControlDescription(partyBreakdown, results.length)}</p>
     </div>
   );
 }

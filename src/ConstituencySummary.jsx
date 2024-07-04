@@ -3,7 +3,7 @@ import "./ConstituencySummary.css";
 import { Link } from "react-router-dom";
 import ControlIcon from "./ControlIcon";
 
-function getSubtext(constituency, searchTerm) {
+function getSubtext(constituency, searchTerm, important) {
   if (searchTerm.length > 0) {
     const lower = searchTerm.toLowerCase();
     const matchesConstituencyName = constituency.name
@@ -16,6 +16,10 @@ function getSubtext(constituency, searchTerm) {
       if (matchingCandidate) return matchingCandidate.name;
     }
   }
+  if (important) {
+    const officeHolder = constituency.candidates.find(c => c.office || c.priorOffice);
+    if (officeHolder) return officeHolder.office || officeHolder.priorOffice;
+  }
   const numCandidates = constituency.candidates.length;
   return numCandidates === 1
     ? "1 candidate standing"
@@ -27,8 +31,9 @@ export default function ConstituencySummary({
   selected,
   searchTerm,
   result,
+  important
 }) {
-  const subtext = getSubtext(value, searchTerm);
+  const subtext = getSubtext(value, searchTerm, important);
   const isSpecial = value.candidates.some((c) => c.office || c.priorOffice);
   return (
     <Link
@@ -53,4 +58,5 @@ ConstituencySummary.propTypes = {
   selected: bool,
   searchTerm: string,
   result: shape({}),
+  important: bool
 };

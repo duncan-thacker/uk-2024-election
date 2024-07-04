@@ -37,7 +37,6 @@ export function getPartyByName(name) {
 
 export function isMatchingParty(code, partyName) {
   const party = getPartyByCode(code);
-  console.log(code, partyName, party, isMajorPartyName(partyName), partyName === party.name);
   if (isMajorPartyName(partyName)) {
     return partyName === party.name;
   }

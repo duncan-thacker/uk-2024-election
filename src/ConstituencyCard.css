@@ -2,6 +2,8 @@
     border: 1px solid #eee;
     border-radius: 16px;
     padding: 24px;
+    overflow-y: auto;
+    max-height: min-content;
 
     .constituency-status {
         background-color: rgba(150,0,180,0.1);
@@ -20,8 +22,11 @@
 
     tr[data-winner=true] {
         background-color: blueviolet;
-        color: #fff;
         font-weight: 700;
+
+        td {
+            color: #fff;
+        }
     }
 
     tr[data-incumbent=true] {
@@ -35,6 +40,7 @@
     td {
         margin: 0;
         height: 64px;
+        color: #000;
     }
 
     h1 {

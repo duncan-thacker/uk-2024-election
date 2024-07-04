@@ -8,16 +8,17 @@ import {
 import ConstituencyList from './ConstituencyList';
 import FullBreakdown from './FullBreakdown';
 import AppSettings from './AppSettings';
+import ErrorPage from './ErrorPage';
 
 const router = createBrowserRouter([
-  { path: '/', element: <ConstituencyList />},
-  { path: '/constituency/:code', element: <ConstituencyList />},
-  { path: '/results', element: <FullBreakdown />},
-  { path: '/settings', element: <AppSettings />},
+  { path: '/', element: <ConstituencyList />, errorElement: <ErrorPage /> },
+  { path: '/constituency/:code', element: <ConstituencyList />, errorElement: <ErrorPage />},
+  { path: '/results', element: <FullBreakdown />, errorElement: <ErrorPage />},
+  { path: '/settings', element: <AppSettings />, errorElement: <ErrorPage />},
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>,
 )

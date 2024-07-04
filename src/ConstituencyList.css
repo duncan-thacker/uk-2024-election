@@ -11,6 +11,8 @@
   flex: 1 1 0;
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
 }
 
 .constituency-list-container {

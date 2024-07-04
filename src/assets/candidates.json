@@ -706,7 +706,8 @@
        "id": "5189",
        "name": "Angela Rayner",
        "party": "Labour Party",
-       "constituency": "Ashton-under-Lyne"
+       "constituency": "Ashton-under-Lyne",
+       "office": "Labour deputy leader"
     },
     {
        "id": "35205",
@@ -3778,7 +3779,8 @@
        "id": "9774",
        "name": "Carla Denyer",
        "party": "Green Party",
-       "constituency": "Bristol Central"
+       "constituency": "Bristol Central",
+       "office": "Green party co-leader"
     },
     {
        "id": "116681",
@@ -5918,7 +5920,8 @@
        "id": "4800",
        "name": "Nigel Farage",
        "party": "Reform UK",
-       "constituency": "Clacton"
+       "constituency": "Clacton",
+       "office": "Reform party leader"
     },
     {
        "id": "117300",
@@ -12157,7 +12160,8 @@
        "id": "5077",
        "name": "Keir Starmer",
        "party": "Labour Party",
-       "constituency": "Holborn and St Pancras"
+       "constituency": "Holborn and St Pancras",
+       "office": "Labour party leader"
     },
     {
        "id": "73109",
@@ -13159,7 +13163,8 @@
        "id": "4507",
        "name": "Ed Davey",
        "party": "Liberal Democrats",
-       "constituency": "Kingston and Surbiton"
+       "constituency": "Kingston and Surbiton",
+       "office": "Liberal Democrat party leader"
     },
     {
        "id": "35980",
@@ -22736,7 +22741,8 @@
        "id": "6312",
        "name": "Daisy Cooper",
        "party": "Liberal Democrats",
-       "constituency": "St Albans"
+       "constituency": "St Albans",
+       "office": "Liberal Democrat deputy leader"
     },
     {
        "id": "46748",
@@ -25444,7 +25450,8 @@
        "id": "1945",
        "name": "Adrian Ramsay",
        "party": "Green Party",
-       "constituency": "Waveney Valley"
+       "constituency": "Waveney Valley",
+       "office": "Green party co-leader"
     },
     {
        "id": "30964",
@@ -25510,7 +25517,8 @@
        "id": "70447",
        "name": "Ben Habib",
        "party": "Reform UK",
-       "constituency": "Wellingborough and Rushden"
+       "constituency": "Wellingborough and Rushden",
+       "office": "Reform deputy leader"
     },
     {
        "id": "44678",

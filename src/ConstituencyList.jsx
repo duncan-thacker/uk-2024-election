@@ -49,6 +49,7 @@ export default function ConstituencyList() {
                 value={con}
                 selected={con === selectedConstituency}
                 searchTerm={filters.searchString}
+                important={filters.importance !== 'any'}
                 result={getResult(con.code)}
               />
             ))}
